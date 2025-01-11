@@ -1,0 +1,239 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: 
+    #f3f7ff; /* Fallback color for browsers that don’t support gradients or images */
+  background-image: 
+    url("images/bg/bg1.png"), /* Your background image */
+    linear-gradient(to bottom, #f3f7ff, #eaeef9); /* Gradient extending the page */
+  background-size: cover, 100%; /* The image remains in its size, gradient spans the full width */
+  background-position: top center; /* Image is aligned top-center */
+  background-repeat: no-repeat, no-repeat; /* Prevents repeating both the image and gradient */
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+
+/* Header Styles */
+.header {
+  background: linear-gradient(135deg, #4c89ff, #3c65c6);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem; /* Adds spacing between the logo and title */
+}
+
+.college-logo {
+  width: 500px; /* Explicit width for better visibility */
+  height: auto; /* Maintain aspect ratio */
+  border: none; /* No border for a clean look */
+}
+
+.header-content h1 {
+  font-size: 3.5rem;
+  margin: 0.5rem 0;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+/* About Section */
+.about {
+  background: #f3f7ff;
+  padding: 2rem 1rem;
+  border-radius: 15px;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+/* Flashcard Style for Frames */
+.frame {
+  background: #fff;
+  padding: 2rem;
+  margin: 1rem auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: rise 0.8s ease-out forwards;
+}
+
+.frame:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.frame h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4a4a4a;
+}
+
+.frame p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.frame img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.resource-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #4c89ff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.resource-link:hover {
+  background: #365bb4;
+  transform: translateY(-3px);
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-container img {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+
+.footer {
+  background:#4c89ff !important;
+  color: white !important;
+  text-align: center !important;
+  padding: 1.5rem !important;
+  margin-top: 2rem !important;
+  font-size: 0.9rem !important;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Animations */
+@keyframes rise {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .frame {
+    padding: 3rem;
+  }
+
+  .header-content h1 {
+    font-size: 4rem;
+  }
+
+  .header-content p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    padding: 4rem 8rem;
+  }
+
+  .header-content h1 {
+    font-size: 4.5rem;
+  }
+}

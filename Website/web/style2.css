@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f7ff;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  form {
+    margin-top: 2rem;
+  }
+  
+  input[type="file"] {
+    margin: 1rem 0;
+  }
+  
+  button {
+    padding: 0.5rem 1rem;
+    background-color: #4c89ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #365bb4;
+  }
+  

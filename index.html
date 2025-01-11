@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PSGRKCW Chess edu ♕</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script>
+    // Check authentication status
+    if (localStorage.getItem("validated") !== "true") {
+      alert("You must authenticate first.");
+      window.location.href = "auth.html"; // Redirect to auth.html if not validated
+    }
+  </script>
+  <h3 style="color: white;">Welcome to the Main Page 🎉🎊</h3>
+  <p style="color: white;">You have access because you are authenticated. ✅</p>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div class="logo-container">
+        <img src="images/college logo/psgrkcw-new-logo.png" alt="College Logo" class="college-logo">
+      </div>
+      <h1>KCW's Chess Hub</h1>
+      <p>Chess, A new trend and a great friend!</p>
+    </div>
+  </header>
+  <br>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About This Project</h2>
+    <p>
+      This project is a part of a chess chatbot and a pairing software, aimed at providing an interactive and educational platform for learning chess. 
+      It covers everything from the basics of each chess piece to strategies like tactics and endgame principles. 
+      Designed to help beginners and chess hobbyists, the site offers structured content and curated resources to improve your skills. 
+      This is an additional resource that can be used along with the chatbot designed for you.
+    </p>
+    <p>
+      Good luck! to you 👍
+    </p>
+  </section>
+
+  <section class="frame" id="pawn">
+    <h2>Pawn</h2>
+    <p>Learn how pawns influence strategy and positioning.</p>
+    <img src="images/pieces/pawn.png" alt="Pawn Piece">
+    <br>
+    <a href="https://lichess.org/learn#/6" class="resource-link">Learn Pawn Movements</a>
+  </section>
+
+  <section class="frame" id="rook1">
+    <h2>Rook</h2>
+    <p>Discover the power of rooks in open files and endgames.</p>
+    <img src="rooks.png" alt="Rook Piece">
+    <br>
+    <a href="https://lichess.org/learn#/1" target="_blank" rel="noopener noreferrer" class="resource-link">Explore Rook Movements</a>
+  </section>
+
+  <section class="frame" id="knight">
+    <h2>Knight</h2>
+    <p>Master the unique movement and strengths of knights.</p>
+    <img src="knights.png" alt="Knight Piece">
+    <br>
+    <a href="https://www.chess.com/lessons/knight-strategy" class="resource-link">Learn Knight Techniques</a>
+  </section>
+
+  <section class="frame" id="bishop">
+    <h2>Bishop</h2>
+    <p>Utilize bishops effectively on open diagonals.</p>
+    <img src="bishops.png" alt="Bishop Piece">
+    <br>
+    <a href="https://www.chess.com/lessons/bishop-strategy" class="resource-link">Study Bishop Play</a>
+  </section>
+
+  <section class="frame" id="queen">
+    <h2>Queen</h2>
+    <p>Understand the versatility and strength of the queen.</p>
+    <img src="queens.png" alt="Queen Piece">
+    <br>
+    <a href="https://www.chess.com/lessons/queen-strategy" class="resource-link">Master Queen Strategies</a>
+  </section>
+
+  <section class="frame" id="king">
+    <h2>King</h2>
+    <p>Learn when to protect the king and when to activate it.</p>
+    <img src="kings.png" alt="King Piece">
+    <br>
+    <a href="https://www.chess.com/lessons/king-strategy" class="resource-link">King Safety and Activity</a>
+  </section>
+
+  <section class="frame" id="checkmate">
+    <h2>Checkmate</h2>
+    <p>Achieving checkmate is the ultimate goal. Learn how.</p>
+    <a href="https://www.chess.com/lessons/checkmate-techniques" class="resource-link">Checkmate Techniques</a>
+  </section>
+
+  <section class="frame" id="stalemate">
+    <h2>Stalemate</h2>
+    <p>Avoid stalemates and use them when in trouble.</p>
+    <a href="https://www.chess.com/lessons/stalemate" class="resource-link">Stalemate Explained</a>
+  </section>
+
+  <section class="frame" id="rook-checkmate">
+    <h2>Rook Checkmate</h2>
+    <p>Learn the fundamentals of rook checkmates.</p>
+    <a href="https://www.chess.com/lessons/rook-checkmate" class="resource-link">Rook Checkmate Basics</a>
+  </section>
+
+  <section class="frame" id="promotion">
+    <h2>Promotion</h2>
+    <p>Learn how and when to promote your pawns.</p>
+    <a href="https://www.chess.com/lessons/pawn-promotion" class="resource-link">Pawn Promotion Guide</a>
+  </section>
+
+  <section class="frame" id="castling">
+    <h2>Castling</h2>
+    <p>Protect your king and develop your rook simultaneously.</p>
+    <a href="https://www.chess.com/lessons/castling" class="resource-link">Learn Castling Rules</a>
+  </section>
+
+  <section class="frame" id="capture">
+    <h2>Capture</h2>
+    <p>Understanding when to capture and when to hold.</p>
+    <a href="https://www.chess.com/lessons/capture-tactics" class="resource-link">Capture Tactics</a>
+  </section>
+
+  <section class="frame" id="opening-principles">
+    <h2>Opening Principles</h2>
+    <p>Set up for success with strong opening principles.</p>
+    <a href="https://www.chess.com/lessons/opening-principles" class="resource-link">Explore Openings</a>
+  </section>
+
+  <section class="frame" id="middlegame">
+    <h2>Middlegame</h2>
+    <p>Transition from opening to planning and execution.</p>
+    <a href="https://www.chess.com/lessons/middlegame-strategy" class="resource-link">Middlegame Strategies</a>
+  </section>
+
+  <section class="frame" id="endgame">
+    <h2>Endgame</h2>
+    <p>Refine your play for the final phase of the game.</p>
+    <a href="https://www.chess.com/lessons/endgame-basics" class="resource-link">Learn Endgame Play</a>
+  </section>
+
+  <footer class="footer">
+    <p><strong>Built with ❤️ by Jyothsna L, Woman FIDE Master (batch 2022 CS AI)</strong></p>
+  </footer>
+</body>
+</html>

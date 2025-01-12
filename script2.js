@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const rollNumberPattern = /\b\d{2}[A-Z]{3}\d{3}\b/; // Regex for roll numbers like "00XYZ000"
 
       // Check for both the college name and a valid roll number
-      if (data.text.includes(validText1) || data.text.includes(validText2)) && rollNumberPattern.test(data.text)) {
+      if ((data.text.includes(validText1) || data.text.includes(validText2)) && rollNumberPattern.test(data.text)) {
         resultElement.textContent = "Access Granted! Redirecting...";
         resultElement.style.color = "green";
 

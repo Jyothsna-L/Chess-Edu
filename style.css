@@ -8,7 +8,7 @@ body {
   background: 
     #f3f7ff; /* Fallback color for browsers that don’t support gradients or images */
   background-image: 
-    url("images/bg/bg1.png"), /* Your background image */
+    url("images/bg/bg2.png"), /* Your background image */
     linear-gradient(to bottom, #f3f7ff, #eaeef9); /* Gradient extending the page */
   background-size: cover, 100%; /* The image remains in its size, gradient spans the full width */
   background-position: top center; /* Image is aligned top-center */
